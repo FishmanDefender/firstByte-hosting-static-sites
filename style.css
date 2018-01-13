@@ -1,0 +1,63 @@
+p{
+	text-align: center;
+	font-family:Cambria;
+}
+h1{
+	text-align:center;
+	font-family:Courier;
+}
+
+.page-header{
+	/* Everything written here will effect all divisions with the class "page-header". */
+
+	background-color: #ffa500;
+	color: white;
+	margin:50px;
+	padding:20px;
+}
+
+.column{
+	float:left;
+	width:32%; /*We make each image "float" to the left and give it a width of 1/3 of the width of the page.*/
+	padding:10px;
+	height:100%;
+	/*We now have a column that is 300px high and 33.33% of the screen wide*/
+	text-align:center;
+}
+
+.column img{ 
+	/*This changes all images in divs of class "column"*/
+
+	height:80%;
+	width:100%;
+}
+
+img{
+	/*This rounds off the corner of the images*/
+	border-radius:25px;
+}
+
+img:hover{
+
+	box-shadow: 0 0 4px 3px black;
+	/*(x-coord, y-coord, height, width, color)*/
+}
+
+@media (max-width: 600px){
+	/*The stuff in this block of code only applies to devices that have a maximum screen size of 600px*/
+
+	.column{
+		width:90%;
+		/*Now on mobile phones, this will only show 1 image per row*/
+	}
+}
+
+.footer{
+
+	position:fixed;
+	text-align:center;
+	background-color: #ffa500;
+	color:white;
+	bottom:0;
+	width:100%;
+}
